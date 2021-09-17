@@ -8,15 +8,17 @@
 </head>
 <body>
     
-    <a href="rnfineo://" >open fineo</a>
+    <a href="rnfineo://" >opeen fineo</a>
    <button onclick="redirectToScheme()" >redirect</button>
 </body>
 <script type="text/javascript">
 
-    setTimeout(function(){
-        alert("fcd")
-        window.location.href("rnfineo://");
-    },4000)
+setTimeout(function() {
+   // Link to the App Store should go here -- only fires if deep link fails                
+   window.location = "rnfineo://";
+}, 500);
+
+  
 
     function redirectToScheme()
     {
